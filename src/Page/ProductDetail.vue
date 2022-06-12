@@ -10,11 +10,11 @@
                 </div>
                 <div class="product-desc-option">
                     <div class="product-desc-option-variant pt-5">
-                        <h1> Pilih Variant Anda </h1>
+                        <h1> Deskripsi </h1>
                         <div class="flex">
                             <div v-for="item in variants" :key="item.id">
-                                <div class="rounded-full px-5 py-2 bg-sky-400 text-white m-1">
-                                <p> {{item.text}}</p>
+                                <div class="text-black m-1">
+                                <p class="w-96"> {{item.text}}</p>
                                 </div>
                             </div>
                     </div>
@@ -45,6 +45,7 @@
                     <div class="product-payment-cta1 bg-gray-400 px-7 py-3 text-white rounded-lg">
                         <span> Add To Cart</span>
                     </div>
+                    <div class="mx-2"> </div>
                     <div class="product-payment-cta2 bg-sky-400 px-7 py-3 text-white rounded-lg">
                         <span> Buy Now</span>
                     </div>
@@ -73,7 +74,6 @@
 
         &-payment {
             display: flex;
-            justify-content: space-between;
         }
     }
 
@@ -95,15 +95,7 @@ export default {
             variants: [
                 {
                     id: 1,
-                    text: "Kecil"
-                },
-                {
-                    id: 2,
-                    text: "Sedang"
-                },
-                {
-                    id: 3,
-                    text: "Besar"
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dolor nisi. Proin fringilla ut ipsum eu rhoncus. Morbi metus magna"
                 }
             ],
             deliveries: [
